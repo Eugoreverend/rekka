@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Distant Star</title>
+    <link rel="stylesheet" href="new.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet" />
+    <style>
+      #playBtn {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        background-color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-family: 'Indie Flower', cursive;
+        font-size: 1rem;
+        border-radius: 10px;
+        cursor: pointer;
+        z-index: 1000;
+        box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <button id="playBtn">Play Music 🎵</button>
+
+    <div class="galaxy">
+      
+      <div class="galaxy">
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+      <div class="wrap">
+        <h1>To My Star 💫</h1>
+        <div class="postcard">
+          <div class="letter"></div>
+          
+            <span>To my star, Claire.<br/></span><br/>
+  In a cosmos of billions, I found you—a gravitational anomaly in the quiet vastness of space.
+It’s only been three months—a flicker in universal time—yet you've become the constellation I search for every night. I don’t know how it happened. One moment I was orbiting normally, the next, I was falling—fast, hard, and completely.
+
+Like a rogue satellite pulled off course, I crash into thoughts of you more often than I mean to. Your presence feels otherworldly—like you’re made of stardust and gravity, pulling me in without warning.
+
+I’ve tried to say this a thousand times, but the words always scatter like meteor dust. So let me say it now, under pixel stars and quiet wishes:
+You are the signal I’ve been waiting for. In the void I once floated alone, you've become my beacon.
+
+If you feel even a spark from this—maybe we can drift together. Through galaxies of laughter and quiet starlit silences.
+If not, let this be a message in a bottle, cast into the cosmic sea—because I had to tell you: you make the universe less lonely.
+  <br/>
+  <br/>
+            <span class="ullu">
+            Yours Truly,<br />
+              Kael.
+            </span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <audio id="bgMusic" loop>
+      <source src="Lost in Thoughts.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+   
+
+    <script>
+      const playBtn = document.getElementById("playBtn");
+      const bgMusic = document.getElementById("bgMusic");
+
+      playBtn.addEventListener("click", () => {
+        bgMusic.play();
+        playBtn.style.display = "none"; // Hide the button after playing
+      });
+    </script>
+  </body>
+</html>
