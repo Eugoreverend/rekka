@@ -83,6 +83,11 @@ If not, let this be a message in a bottle, cast into the cosmic sea—because I 
 
     // Smooth scroll into the message area
     message.scrollIntoView({ behavior: "smooth" });
+
+ window.addEventListener("load", () => {
+    if (window.innerWidth <= 768) {
+      document.getElementById("message").scrollIntoView({ behavior: "smooth" });
+    }
   });
 </script>
       });
