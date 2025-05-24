@@ -180,12 +180,3 @@ h1 {
   backdrop-filter: blur(12px);
   margin: 50px auto;
 }
-p {
-  font-size: 1.15rem;
-  line-height: 2rem;
-  color: #e0e0ff;
-  padding: 10px;
-  white-space: pre-wrap;
-  word-wrap: break-word;
-  text-align: justify;
-}
